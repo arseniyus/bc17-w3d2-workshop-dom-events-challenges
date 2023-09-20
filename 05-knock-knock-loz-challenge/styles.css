@@ -23,6 +23,8 @@ body {
 }
 
 .door {
+  height: 50vmin;
+  width: auto;
   cursor: pointer;
   transition: transform 0.2s ease;
 }
