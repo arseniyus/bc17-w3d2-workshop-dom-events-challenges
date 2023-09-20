@@ -1,0 +1,24 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  color: #333;
+}
+
+#chrisImage {
+  display: block;
+  margin: 20px 0;
+  width: 200px;
+  transition: opacity 0.4s ease;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
