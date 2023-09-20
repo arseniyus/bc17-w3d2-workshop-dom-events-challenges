@@ -33,10 +33,10 @@ body {
   color: gold;
   margin: 0 5px;
   transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
-  /* Optional effects when hovering over a star */
-  &:hover {
-    transform: scale(1.1); /* Slightly enlarge the star */
-    opacity: 0.8; /* Slightly fade the star */
-  }
+/* Optional effects when hovering over a star */
+.star-icon:hover {
+  transform: scale(1.1); /* Slightly enlarge the star */
+  opacity: 0.8; /* Slightly fade the star */
 }
