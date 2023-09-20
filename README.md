@@ -13,7 +13,7 @@ The goal of this hands-on workshop is to help you:
 
 ## Getting Started ✨ 
 
-- Run `index.js` with Live Server in `root` folder! 
+- Run `index.html` with Live Server in `root` folder! 
 - Main page opens - you can navigate by clicking the links!
 - Browser back button brings you back to the list of challenges!
 
