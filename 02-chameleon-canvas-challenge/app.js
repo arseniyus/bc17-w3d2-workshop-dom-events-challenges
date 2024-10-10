@@ -13,9 +13,3 @@ Expected Outcomes:
 */
 
 // Place your plan and solution below!
-const picker = document.getElementById("colorPicker");
-const canvas = document.getElementById("canvas");
-
-picker.addEventListener("input", () => {
-	canvas.style.backgroundColor = picker.value;
-});
