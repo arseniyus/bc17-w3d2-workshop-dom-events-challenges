@@ -4,7 +4,7 @@
 		"chameleon": "jest 02-chameleon-canvas-challenge/app.test.js",
 		"star": "jest 03-star-slider-challenge/app.test.js",
 		"chrisdini": "jest 04-chrisdini-challenge/app.test.js",
-		"knock": "jest 05-knock-knock-challenge/app.test.js"
+		"knock": "jest 05-knock-knock-loz-challenge/app.test.js"
 	},
 	"devDependencies": {
 		"jest": "^29.7.0",

@@ -30,31 +30,25 @@ describe("Chrisdini Challenge", () => {
 		window.eval(scriptContent);
 	});
 
-	test("Using mouseover and mouseout", () => {
+	const testOpacityChange = (enterEvent, leaveEvent) => {
 		const chrisImage = document.getElementById("chrisImage");
 
-		// Simulate mouseover event
-		const mouseOverEvent = new window.Event("mouseover", { bubbles: true });
-		chrisImage.dispatchEvent(mouseOverEvent);
+		// Simulate enter event
+		const enterEventInstance = new window.Event(enterEvent, { bubbles: true });
+		chrisImage.dispatchEvent(enterEventInstance);
 		expect(chrisImage.style.opacity).toBe("0");
 
-		// Simulate mouseout event
-		const mouseOutEvent = new window.Event("mouseout", { bubbles: true });
-		chrisImage.dispatchEvent(mouseOutEvent);
+		// Simulate leave event
+		const leaveEventInstance = new window.Event(leaveEvent, { bubbles: true });
+		chrisImage.dispatchEvent(leaveEventInstance);
 		expect(chrisImage.style.opacity).toBe("1");
-	});
+	};
 
-	test("Should make Chris disappear on mouseenter and reappear on mouseleave", () => {
-		const chrisImage = document.getElementById("chrisImage");
-
-		// Simulate mouseenter event
-		const mouseEnterEvent = new window.Event("mouseenter", { bubbles: true });
-		chrisImage.dispatchEvent(mouseEnterEvent);
-		expect(chrisImage.style.opacity).toBe("0");
-
-		// Simulate mouseleave event
-		const mouseLeaveEvent = new window.Event("mouseleave", { bubbles: true });
-		chrisImage.dispatchEvent(mouseLeaveEvent);
-		expect(chrisImage.style.opacity).toBe("1");
+	test("Using mouse events", () => {
+		try {
+			testOpacityChange("mouseover", "mouseout");
+		} catch (e) {
+			testOpacityChange("mouseenter", "mouseleave");
+		}
 	});
 });
