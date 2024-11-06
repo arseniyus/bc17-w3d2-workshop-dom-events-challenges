@@ -19,4 +19,7 @@ The goal of this hands-on workshop is to help you:
 
 Each challenge has instructions in its `app.js` file. There is no need to run each individual html file in the challenge folders, you can access them from the main `index.html` in the root!
   
+- After you completed the challenges, feel free to run the test using `npm test` for all of the tests or `npm test *name of your file/folder* `
+
 **Let's do this!** 🚀
+
