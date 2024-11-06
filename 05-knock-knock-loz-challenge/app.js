@@ -13,3 +13,17 @@ Expected Outcomes:
 */
 
 // Place your plan and solution below!
+
+ 
+const doors = document.querySelectorAll('.door');
+const lozIndex = Math.floor(Math.random() * doors.length);
+doors.forEach((door, index) => {
+    door.addEventListener('click', () => {
+        revealDoor(index);
+    });
+});
+function revealDoor(index) {
+    doors[index].src =
+        index === lozIndex ? './door-open-loz.png' : './door-open-empty.png';
+    doors[index].removeAttribute('onclick');
+}

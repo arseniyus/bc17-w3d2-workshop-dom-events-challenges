@@ -15,3 +15,11 @@ Hint: You can achieve this in multiple ways e.g. via the opacity or style proper
 */
 
 // Place your plan and solution below!
+
+let chrisImage = document.getElementById('chrisImage');
+chrisImage.addEventListener('mouseover', function () {
+    chrisImage.style.opacity = 0;
+});
+chrisImage.addEventListener('mouseout', function () {
+    chrisImage.style.opacity = 1;
+});

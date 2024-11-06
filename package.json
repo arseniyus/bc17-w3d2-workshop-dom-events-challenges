@@ -4,10 +4,12 @@
 		"chameleon": "jest 02-chameleon-canvas-challenge/app.test.js",
 		"star": "jest 03-star-slider-challenge/app.test.js",
 		"chrisdini": "jest 04-chrisdini-challenge/app.test.js",
-		"knock": "jest 05-knock-knock-loz-challenge/app.test.js"
+		"knock": "jest 05-knock-knock-loz-challenge/app.test.js",
+		"test": "jest"
 	},
 	"devDependencies": {
 		"jest": "^29.7.0",
-		"jsdom": "^25.0.1"
+		"jsdom": "^25.0.1",
+		"test": "^3.3.0"
 	}
 }

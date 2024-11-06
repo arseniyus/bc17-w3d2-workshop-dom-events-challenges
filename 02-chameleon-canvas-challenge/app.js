@@ -13,3 +13,9 @@ Expected Outcomes:
 */
 
 // Place your plan and solution below!
+
+let colorPicker = document.getElementById('colorPicker');
+let canvas = document.getElementById('canvas');
+colorPicker.addEventListener('input', function () {
+    canvas.style.backgroundColor = colorPicker.value;
+});
