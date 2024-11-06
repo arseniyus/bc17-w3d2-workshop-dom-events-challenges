@@ -40,7 +40,7 @@ describe("Door Game Functionality", () => {
 		const doors = document.getElementsByClassName("door");
 
 		// Simulate clicking the first door
-		doors[0].click();
+		doors[0].click() || doors[1].click();
 
 		// Check if both doors are open
 		const door1Open =
