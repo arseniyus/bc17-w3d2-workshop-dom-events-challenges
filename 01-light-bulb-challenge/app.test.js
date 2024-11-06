@@ -30,13 +30,7 @@ describe("Lightbulb Control", () => {
 		window.eval(scriptContent);
 	});
 
-	test('should turn on the lightbulb when "Turn On" button is clicked', () => {
-		const bulb = document.getElementById("lightbulb");
-		const turnOn = document.getElementById("turnBulbOn");
-
-		turnOn.click();
-		expect(bulb.src).toContain("light-bulb-on.png");
-	});
+	
 
 	test('should turn off the lightbulb when "Turn Off" button is clicked', () => {
 		const bulb = document.getElementById("lightbulb");

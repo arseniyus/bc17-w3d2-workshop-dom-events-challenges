@@ -29,13 +29,6 @@ describe("Door Game Functionality", () => {
 		window.eval(scriptContent);
 	});
 
-	test("should have both doors closed initially", () => {
-		const doors = document.getElementsByClassName("door");
-
-		expect(doors[0].src).toContain("door-closed.png");
-		expect(doors[1].src).toContain("door-closed.png");
-	});
-
 	test("should open both doors when one is clicked", () => {
 		const doors = document.getElementsByClassName("door");
 

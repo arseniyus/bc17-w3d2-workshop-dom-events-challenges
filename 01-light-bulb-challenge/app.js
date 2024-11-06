@@ -15,13 +15,4 @@ Expected Outcomes:
 
 // Place your plan and solution below!
 
-let turnBulbOn = document.getElementById('turnBulbOn');
-let turnBulbOff = document.getElementById('turnBulbOff');
-let lightBulbImage = document.getElementById('lightbulb');
-//listen for button click when clicked change the image src
-turnBulbOn.addEventListener('click', function () {
-    lightBulbImage.src = './light-bulb-on.png';
-});
-turnBulbOff.addEventListener('click', function () {
-    lightBulbImage.src = './light-bulb-off.png';
-});
+

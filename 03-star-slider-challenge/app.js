@@ -14,16 +14,3 @@ Expected Outcomes:
 
 // Place your plan and solution below!
 
-const starSlider = document.getElementById('starSlider');
-const starsContainer = document.getElementById('stars');
-starSlider.addEventListener('input', updateStars);
-function updateStars() {
-    starsContainer.innerHTML = '';
-    const numStars = parseInt(starSlider.value, 10);
-    for (let i = 0; i < numStars; i++) {
-        const starSpan = document.createElement('span');
-        starSpan.classList.add('star-icon');
-        starSpan.textContent = '★';
-        starsContainer.appendChild(starSpan);
-    }
-}
